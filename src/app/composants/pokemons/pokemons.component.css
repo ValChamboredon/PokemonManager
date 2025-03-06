@@ -1,0 +1,39 @@
+/* Conteneur principal : 3 colonnes par ligne */
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 30px; /* Espacement entre les cartes */
+    justify-content: center;
+    padding: 20px;
+    max-width: 900px; /* Ajuster la largeur max */
+    margin: auto; /* Centrer le contenu */
+}
+
+/* Carte Pokémon */
+.pokemon-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+/* Image Pokémon */
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Titre Pokémon */
+.pokemon-card h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+

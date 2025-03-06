@@ -1,1 +1,17 @@
-<p>pokemons works!</p>
+<p>{{ pokemonCount }} pokémons en base de données</p>
+<div class="pokemon-container">
+    @for (pokemon of pokemons; track pokemon) {
+        <div class="pokemon-card">
+            <img [src]="pokemon.image" [alt]="pokemon.nom">
+            <h3>{{ pokemon.nom }}</h3>
+            <p><strong>Catégorie :</strong> {{ pokemon.categorie }}</p>
+            <p><strong>Type :</strong> {{ pokemon.type }}</p>
+            <p><strong>Taille :</strong> {{ pokemon.taille }} m</p>
+            <p><strong>Poids :</strong> {{ pokemon.poids }} kg</p>
+        </div>
+    }
+</div>
+
+
+
+

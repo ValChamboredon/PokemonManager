@@ -1,0 +1,22 @@
+h2 {
+    color: #ffcc00;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Listes des Générations */
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    background: white;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    list-style: none;
+}

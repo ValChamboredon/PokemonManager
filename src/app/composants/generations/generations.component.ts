@@ -1,20 +1,21 @@
 import { Component } from '@angular/core';
+import { PokemonService } from '../../services/pokemon.service';
 
 @Component({
   selector: 'app-generations',
-  imports: [],
+  standalone:true,
   templateUrl: './generations.component.html',
-  styleUrl: './generations.component.css'
+  styleUrls: ['./generations.component.css']
 })
 export class GenerationsComponent {
-  generations: string[] = [
-      "Génération I",
-      "Génération II",
-      "Génération III",
-      "Génération IV",
-      "Génération V",
-      "Génération VI",
-      "Génération VII"
-  ];
+  generations: any[] = [];
+
+  constructor(private pokemonService: PokemonService) {
+    this.pokemonService.getGenerations().subscribe(data => {
+      this.generations = data;
+    });
+  }
 }
+
+
 

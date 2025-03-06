@@ -1,7 +1,8 @@
 <h2>Liste des Générations</h2>
 <ul>
     @for (generation of generations; track generation) {
-        <li>{{ generation }}</li>
+        <li>{{ generation.name.charAt(0).toUpperCase() + generation.name.slice(1).toUpperCase() }}</li>
     }
 </ul>
+
 
